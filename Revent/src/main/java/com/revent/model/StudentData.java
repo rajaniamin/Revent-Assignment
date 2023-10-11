@@ -1,74 +1,78 @@
 package com.revent.model;
 
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.Size;
 
 @Entity
 public class StudentData {
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Integer id;
-	private String name;
-	private String subject;
-	private Double marks;
-	
-	public StudentData() {
-		// TODO Auto-generated constructor stub
-	}
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
 
-	public StudentData(String name, String subject, Double marks) {
-		super();
-		this.name = name;
-		this.subject = subject;
-		this.marks = marks;
-	}
+    @NotBlank(message = "Name is required")
+    @Size(max = 50, message = "Name should not exceed 50 characters")
+    private String name;
 
-	public StudentData(Integer id, String name, String subject, Double marks) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.subject = subject;
-		this.marks = marks;
-	}
+    @NotBlank(message = "Subject is required")
+    @Size(max = 50, message = "Subject should not exceed 50 characters")
+    private String subject;
 
-	public Integer getId() {
-		return id;
-	}
+    @NotNull(message = "Marks cannot be null")
+    @Positive(message = "Marks must be a positive number")
+    private Double marks;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public StudentData() {
+        // Default constructor
+    }
 
-	public String getName() {
-		return name;
-	}
+    public StudentData(String name, String subject, Double marks) {
+        this.name = name;
+        this.subject = subject;
+        this.marks = marks;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public StudentData(Integer id, String name, String subject, Double marks) {
+        this.id = id;
+        this.name = name;
+        this.subject = subject;
+        this.marks = marks;
+    }
 
-	public String getSubject() {
-		return subject;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public void setSubject(String subject) {
-		this.subject = subject;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public Double getMarks() {
-		return marks;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setMarks(Double marks) {
-		this.marks = marks;
-	}
-	
-	
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public String getSubject() {
+        return subject;
+    }
 
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
 
+    public Double getMarks() {
+        return marks;
+    }
 
+    public void setMarks(Double marks) {
+        this.marks = marks;
+    }
 }

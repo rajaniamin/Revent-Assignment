@@ -12,13 +12,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.revent.model.StudentData;
+import com.revent.service.StudentDataInterface;
 import com.revent.service.StudentDataServ;
 
 @RestController
 public class StudentDataController {
 
 	@Autowired
-	private StudentDataServ stuServ;
+	private StudentDataInterface stuServ;
 
 	@PostMapping("/addData")
 	public StudentData addUser(@RequestBody StudentData user) {
