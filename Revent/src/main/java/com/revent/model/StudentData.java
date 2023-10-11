@@ -12,7 +12,7 @@ import jakarta.validation.constraints.Size;
 @Entity
 public class StudentData {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private Integer id;
 
     @NotBlank(message = "Name is required")

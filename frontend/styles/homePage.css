@@ -1,0 +1,39 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('https://th.bing.com/th/id/OIP.m2lLjZ2dFD55MtjJSa0pYwHaEo?w=288&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+
+}
+.atags {
+    text-align: center;
+    align-items: center;
+}
+a{
+    color: rgb(237, 210, 229);
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 900;
+    
+} 
+a:hover{
+    font-size: 30px;
+}
+
+.stuimg {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
+
+.stuimg img{
+    width: 90%;
+    height: 600px;
+    object-fit: cover; 
+    transition: opacity 0.5s, transform 0.5s;
+}
