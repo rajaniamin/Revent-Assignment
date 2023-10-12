@@ -6,6 +6,9 @@
 
 This is a comprehensive student data management application that combines both backend and frontend components. The backend is developed using Java Spring Boot and utilizes an H2 database, while the frontend is created using HTML, CSS, JavaScript, and Bootstrap. This README provides a detailed overview of the application, its components, available APIs, and instructions on how to interact with them using Postman and Swagger UI.
 
+[Explanation Video](https://drive.google.com/file/d/1FAO9bripymO_uG27VrsdU9239kb0ePQg/view?usp=sharing)
+
+
 ## Backend (Java Spring Boot)
 
 ### Dependencies
