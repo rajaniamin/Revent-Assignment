@@ -1,6 +1,6 @@
 # Revent-Assignment
 
-# Student Data Management Application
+# Student Performance Dashboard
 
 ## Introduction
 
