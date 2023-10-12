@@ -108,7 +108,7 @@ saveEditButton.addEventListener('click', function () {
       console.log('Data sent to the API:', data);
 
       // Update the existing row in the table
-      updateStudentRow(data);
+      addRowToTable(data);
     })
     .catch(error => {
       console.error('Error sending data to the API:', error);
