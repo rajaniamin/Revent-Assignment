@@ -8,6 +8,16 @@ This is a comprehensive student data management application that combines both b
 
 [Explanation Video](https://drive.google.com/file/d/1FAO9bripymO_uG27VrsdU9239kb0ePQg/view?usp=sharing)
 
+## Getting Started
+
+To get started with our Student Data Management Application, follow these simple steps:
+
+### 1. Clone the Repository
+
+- Click the "Clone" button on our GitHub repository, or run this command in your terminal:
+  ```bash
+  git clone (https://github.com/rajaniamin/Revent-Assignment.git)
+-Run index.htm.html which is resent inside the frontend folder , together run the spring boot application as well
 
 ## Backend (Java Spring Boot)
 
