@@ -28,6 +28,7 @@ The backend of this application relies on several key dependencies:
 - **Spring Web:** Provides essential web-related functionalities.
 - **Spring JPA:** A Java Persistence API that simplifies database operations.
 - **H2 Database:** An in-memory database for convenient data storage and retrieval during development.
+- **Validation:** Provides validation capabilities to ensure data integrity and consistency.
 
 ### APIs
 
