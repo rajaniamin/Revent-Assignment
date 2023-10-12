@@ -23,31 +23,37 @@ public class StudentDataController {
 	@Autowired
 	private StudentDataInterface stuServ;
 
+	// Endpoint for adding student data record.
 	@PostMapping("/addData")
 	public StudentData addUser(@RequestBody StudentData user) {
 		return stuServ.createData(user);
 	}
 
+	// Endpoint for adding multiple student data records.
 	@PostMapping("/addDatas")
 	public List<StudentData> addUsers(@RequestBody List<StudentData> users) {
 		return stuServ.createMultipleData(users);
 	}
 
+	// Endpoint for getting a student's data by ID.
 	@GetMapping("/student/{id}")
 	public StudentData getUserById(@PathVariable int id) {
 		return stuServ.getDatatbyId(id);
 	}
 
+	// Endpoint for getting a list of all student data records
 	@GetMapping("/studentslist")
 	public List<StudentData> getAllUsers() {
 		return stuServ.getAllData();
 	}
-	
+
+	// Endpoint for updating a student's data.
 	@PutMapping("/updatedata")
 	public StudentData updateUser(@RequestBody StudentData user) {
 		return stuServ.updateData(user);
 	}
 
+	// Endpoint for deleting a student's data by ID.
 	@DeleteMapping("/student/{id}")
 	public String deleteUser(@PathVariable int id) {
 		return stuServ.deleteDatabyID(id);
